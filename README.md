@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# 📝 Todo App - DevQuest Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação de lista de tarefas (Todo List) funcional e responsiva, desenvolvida como um exercício prático dirigido do curso **DevQuest**. O foco do projeto foi aplicar conceitos avançados de React, como gerenciamento de estado, hooks personalizados e troca dinâmica de temas.
 
-Currently, two official plugins are available:
+[Image of Todo List application UI with light and dark mode comparison]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias e Conceitos Aplicados
 
-## React Compiler
+O projeto foi construído utilizando o que há de mais moderno no ecossistema Frontend para garantir performance e manutenibilidade:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React + Vite**: Ambiente de desenvolvimento rápido com Fast Refresh.
+* **TypeScript**: Tipagem estática para evitar erros em tempo de execução e melhorar a experiência de desenvolvimento (DX).
+* **Tailwind CSS v4**: Utilização do novo motor `@theme` para estilização eficiente e variáveis CSS nativas.
+* **Context API**: Gerenciamento de estado global para a funcionalidade de troca de temas (Dark/Light Mode).
+* **Custom Hooks**: Abstração da lógica de negócios e manipulação de arrays no hook `useTodo`.
 
-## Expanding the ESLint configuration
+## 🛠️ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [x] **CRUD de Tarefas**: Adicionar, listar e excluir todos.
+- [x] **Estados de Tarefa**: Marcar e desmarcar tarefas como concluídas.
+- [x] **Filtros Dinâmicos**: Filtragem por estado (All, Active, Completed).
+- [x] **Toggle de Tema**: Alternância entre Dark e Light mode com persistência visual.
+- [x] **Limpeza em Massa**: Opção "Clear Completed" para remover tarefas finalizadas.
+- [x] **Design Responsivo**: Layout adaptado para mobile e desktop.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🔧 Instalação e Execução
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/Adryel7/nome-do-seu-repositorio.git](https://github.com/Adryel7/nome-do-seu-repositorio.git)
+   
+Instale as dependências:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+  npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Inicie o servidor de desenvolvimento:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+  npm run dev
 ```
+
+## 🌐 Deploy
+
+Você pode visualizar o projeto online através do link abaixo:
+
+* **GitHub Pages:** [https://adryel7.github.io/Todo/](https://adryel7.github.io/Todo/)
+
+## 🎓 Sobre o Exercício
+Este projeto foi realizado durante o curso DevQuest, com o intuito de práico de ensinar e consolidar conhecimentos em React e estilização avançada. Foi um passo importante na minha transição de carreira, onde pude ver a lógica de programação e fundamentos de engenharia de software em um contexto real de interface de usuário (UI).
+
+## 👨‍💻 Autor
+
+Adryel Almeida 
+
+### 📫 Contatos:
+
+* [LinkedIn](https://www.linkedin.com/in/adryel-almeida-052365321/)
+* [GitHub](https://github.com/Adryel7)
