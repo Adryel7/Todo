@@ -2,7 +2,8 @@
 
 Este projeto é uma aplicação de lista de tarefas (Todo List) funcional e responsiva, desenvolvida como um exercício prático dirigido do curso **DevQuest**. O foco do projeto foi aplicar conceitos avançados de React, como gerenciamento de estado, hooks personalizados e troca dinâmica de temas.
 
-[Image of Todo List application UI with light and dark mode comparison]
+![alt text](image.png)
+![alt text](image-1.png)
 
 ## 🚀 Tecnologias e Conceitos Aplicados
 
